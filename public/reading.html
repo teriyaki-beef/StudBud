@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Reading List</title>
+   <link rel="icon" type="image/x-icon" href="favicon.png">
+
+   <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+<header class="header">
+
+    <a href="home.html" class="logo"> <i class="fas fa-lightbulb"></i> StudBud </a>
+ 
+    <nav class="navbar">
+       <div id="close-navbar" class="fas fa-times"></div>
+       <a href="home.html">home</a>
+       <a href="study.html">study</a>
+       <a href="reading.html">reading list</a>
+       <a href="profile.html">profile</a>
+    </nav>
+ 
+    <div class="icons">
+       <div id="account-btn" class="fas fa-user"></div>
+       <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+ 
+ </header>
+
+ <!-- account form section starts  -->
+
+<div class="account-form">
+
+    <div id="close-form" class="fas fa-times"></div>
+ 
+    <div class="buttons">
+       <span class="btn active login-btn">login</span>
+       <span class="btn register-btn">register</span>
+    </div>
+ 
+    <form class="login-form active" action="">
+       <h3>login</h3>
+       <input type="email" placeholder="Enter your Email" class="box">
+       <input type="password" placeholder="Enter your Password" class="box">
+       <div class="flex">
+          <input type="checkbox" name="" id="remember-me">
+          <label for="remember-me">Remember Me</label>
+          <a href="#">Forgot Password?</a>
+       </div>
+       <input type="submit" value="login now" class="btn">
+    </form>
+ 
+    <form class="register-form" action="">
+       <h3>register</h3>
+       <input type="email" placeholder="enter your email" class="box">
+       <input type="password" placeholder="enter your password" class="box">
+       <input type="password" placeholder="confirm your password" class="box">
+       <input type="submit" value="register now" class="btn">
+    </form>
+ 
+ </div>
+ 
+ <!-- account form section ends -->
+
+ <section class="heading-link">
+    <h1 class="heading"> Reading List </h1>
+    <p> <a href="home.html">home</a> / readings </p>
+ </section> 
+
+<div class="container mt-4">
+
+    <h2 class="subheading">Add New Reading</h2>
+
+      <form id="book-form">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" placeholder="Generative design" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Design Programming" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="link">Link</label>
+          <input type="text" id="link" placeholder="https://canvas.sydney.edu.au/courses/32109/external_tools/45015" class="form-control">
+        </div>
+        <input type="submit" value="Add Book" class="rbtn">
+      </form>
+      <table class="table table-striped mt-5">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Subject</th>
+            <th>Link</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+  </div>
+
+
+<!-- Saved Reading List starts -->
+
+<section class="readings">
+
+    <!-- Processes and Methods Readings -->
+       <h1 class="heading">Saved Readings</h1>
+       <h2 class="subheading">Processes and Methods</h2>
+    
+       <div class="accordion-container">
+    
+          <div class="accordion active">
+             <div class="accordion-heading">
+                <h3>Understanding Design Cognition</h3>
+                <i class="fas fa-angle-down"></i>
+             </div>
+             <p class="accordion-content">
+                Optional reading for Week 1: Understanding Design Cognition (Cross, N., 2007) <br>
+                <i class="fas fa-link"></i>&nbsp;&nbsp;<a href="https://canvas.sydney.edu.au/courses/32058/pages/preparing-for-week-1?module_item_id=1066599" target="_blank">https://canvas.sydney.edu.au/courses/32058/...</a>
+             </p>
+          </div>
+    
+          <div class="accordion">
+             <div class="accordion-heading">
+                <h3>Thinking with external representations </h3>
+                <i class="fas fa-angle-down"></i>
+             </div>
+             <p class="accordion-content">
+                Recommended reading for Week 2: Thinking with external representations (David Kirsh, 2010)<br>
+                <i class="fas fa-link"></i>&nbsp;&nbsp;<a href="https://canvas.sydney.edu.au/courses/32058/pages/preparing-for-week-2?module_item_id=1066609" target="_blank">https://canvas.sydney.edu.au/courses/32058/...</a>
+             </p>
+          </div>
+    
+          <div class="accordion">
+             <div class="accordion-heading">
+                <h3>Design Thinking as an effective Toolkit for Innovation</h3>
+                <i class="fas fa-angle-down"></i>
+             </div>
+             <p class="accordion-content"> 
+                Recommended reading for Week 3: Design Thinking as an effective Toolkit for Innovation (Katja Tschimmel, 2012) <br>
+                <i class="fas fa-link"></i>&nbsp;&nbsp;<a href="https://canvas.sydney.edu.au/courses/32058/pages/preparing-for-week-3?module_item_id=1066619" >https://canvas.sydney.edu.au/courses/32058/...</a>
+             </p>
+          </div>
+    
+          <div class="accordion">
+             <div class="accordion-heading">
+                <h3>Designing an Effective Questionnaire</h3>
+                <i class="fas fa-angle-down"></i>
+             </div>
+             <p class="accordion-content">
+                Recommended reading for Week 4: Designing an Effective Questionnaire (Colosi. L 2006)
+                <i class="fas fa-link"></i>&nbsp;&nbsp;<a href="https://canvas.sydney.edu.au/courses/32058/pages/preparing-for-week-4?module_item_id=1066626" >https://canvas.sydney.edu.au/courses/32058/...</a>
+             </p>
+          </div>
+    
+          <div class="accordion">
+             <div class="accordion-heading">
+                <h3>The importance of observation</h3>
+                <i class="fas fa-angle-down"></i>
+             </div>
+             <p class="accordion-content">
+                Article for Week 5 tutorial activity: The importance of observation by Steph Rymer (2017)
+                <i class="fas fa-link"></i>&nbsp;&nbsp;<a href="https://medium.com/design-intelligence/the-importance-of-observation-71de43add696" >www.medium.com/design-intelligence/...</a>
+             </p>
+          </div>
+    
+          <div class="accordion">
+             <div class="accordion-heading">
+                <h3>A How-to Guide to Key Techniques for User-Centered Design</h3>
+                <i class="fas fa-angle-down"></i>
+             </div>
+             <p class="accordion-content">
+                Recommended reading for Week 6: A How-to Guide to Key Techniques for User-Centered Design (Elsevier Inc. 2005)
+                <i class="fas fa-link"></i>&nbsp;&nbsp;<a href="https://canvas.sydney.edu.au/courses/32058/pages/preparing-for-week-6?module_item_id=1066646" >https://canvas.sydney.edu.au/courses/32058/...</a>
+             </p>
+          </div>
+    
+       </div>
+    
+    
+    <br><br><br><br>
+    
+    <!-- Visual Communication Readings -->
+       <h2 class="subheading">Visual Communication</h2>
+    
+       <div class="accordion-container">
+    
+        <div class="accordion">
+             <div class="accordion-heading">
+                <h3>Graphic Design Worlds</h3>
+                <i class="fas fa-angle-down"></i>
+             </div>
+             <p class="accordion-content">
+               Mandatory reading for Week 2: Graphic Design Worlds (Elle Lupton, 2010<br>
+                <i class="fas fa-link"></i>&nbsp;&nbsp;<a href="https://canvas.sydney.edu.au/courses/30961/files/15362561?module_item_id=1137178" target="_blank">https://canvas.sydney.edu.au/courses/30961/...</a>
+             </p>
+          </div>
+    
+          <div class="accordion">
+             <div class="accordion-heading">
+                <h3>Existing Visual Communication & Introduction to Typography</h3>
+                <i class="fas fa-angle-down"></i>
+             </div>
+             <p class="accordion-content">
+                Optional article reading for Week 3: Jessica Hische's Lettering Work <br>
+                <i class="fas fa-link"></i>&nbsp;&nbsp;<a href="https://jessicahische.is/" target="_blank">https://jessicahische.is/...</a>
+             <p class="accordion-content">
+                   Optional article reading for Week 3: French Graphic design company "Guerillagrafik" <br>
+                   <i class="fas fa-link"></i>&nbsp;&nbsp;<a href="http://www.guerillagrafik.com/" target="_blank">http://www.guerillagrafik.com/...</a>
+             </p>
+          </div>
+    
+          <div class="accordion">
+             <div class="accordion-heading">
+                <h3>Make Your Sh*t Look Good</h3>
+                <i class="fas fa-angle-down"></i>
+             </div>
+             <p class="accordion-content">
+                Optional reading for Week 4: Make Your Sh*t Look Good (Bianca Jarvis, 2019)<br>
+                <i class="fas fa-link"></i>&nbsp;&nbsp;<a href="https://canvas.sydney.edu.au/courses/30961/files/15501866?module_item_id=1144720" >https://canvas.sydney.edu.au/courses/30961/...</a>
+             </p>
+          </div>
+    
+          <div class="accordion">
+             <div class="accordion-heading">
+                <h3>Design Timescapes<h3>
+                <i class="fas fa-angle-down"></i>
+             </div>
+             <p class="accordion-content">
+                Optional reading for Week 5: Design Timescapes (Tomitsch et al., 2019)<br>
+                <i class="fas fa-link"></i>&nbsp;&nbsp;<a href="https://canvas.sydney.edu.au/courses/30961/files/15715307?module_item_id=1152318" >https://canvas.sydney.edu.au/courses/30961/...</a>
+             </p>
+          </div>
+    
+          <div class="accordion">
+             <div class="accordion-heading">
+                <h3>Coded Devices<h3>
+                <i class="fas fa-angle-down"></i>
+             </div>
+             <p class="accordion-content">
+                Mandatory reading for Week 8: Coded Devices(Maddee Clark 2016)<br>
+                <i class="fas fa-link"></i>&nbsp;&nbsp;<a href="https://canvas.sydney.edu.au/courses/30961/files/16283589?module_item_id=1171394" >https://canvas.sydney.edu.au/courses/30961/...</a>
+             </p>
+          </div>
+    
+          <div class="accordion">
+             <div class="accordion-heading">
+                <h3>Six pillars: Futures thinking for transforming</h3>
+                <i class="fas fa-angle-down"></i>
+             </div>
+             <p class="accordion-content">
+                Optional reading for Week 8: Coded Devices (Sohail Inayatullah, 2008)<br>
+                <i class="fas fa-link"></i>&nbsp;&nbsp;<a href="https://canvas.sydney.edu.au/courses/30961/files/14845277?module_item_id=1090357" >https://canvas.sydney.edu.au/courses/30961/...</a>
+             </p>
+          </div>
+    
+       </div>
+    
+    <br><br><br><br>
+    
+    <!-- Design Programming Readings -->
+    <h2 class="subheading">Design Programming</h2>
+    
+    <div class="accordion-container">
+    
+     <div class="accordion">
+          <div class="accordion-heading">
+             <h3>Ten Questions Concerning Generative Computer Art</h3>
+             <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordion-content">
+            Optional reading: Ten Questions Concerning Generative Computer Art (Jon McCormack, 2014)<br>
+             <i class="fas fa-link"></i>&nbsp;&nbsp;<a href="https://canvas.sydney.edu.au/courses/32109/external_tools/45015" target="_blank">https://canvas.sydney.edu.au/courses/32109/...</a>
+          </p>
+       </div>
+    
+       <div class="accordion">
+          <div class="accordion-heading">
+             <h3>Generative design </h3>
+             <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordion-content">
+             Optional reading: Generative design : visualize, program, and create with JavaScript in p5.js (Bohnacker, 2018) <br>
+             <i class="fas fa-link"></i>&nbsp;&nbsp;<a href="https://canvas.sydney.edu.au/courses/32109/external_tools/45015" >https://canvas.sydney.edu.au/courses/32109/...</a>
+          </p>
+       </div>
+    
+       <div class="accordion">
+          <div class="accordion-heading">
+             <h3>Coding Art<h3>
+             <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordion-content">
+             Optional Reading: Coding Art The Four Steps to Creative Programming with the Processing Language (Yu Zhang, 2021)<br>
+             <i class="fas fa-link"></i>&nbsp;&nbsp;<a href="https://canvas.sydney.edu.au/courses/32109/external_tools/45015" >https://canvas.sydney.edu.au/courses/32109/...</a>
+          </p>
+       </div>
+    
+       <div class="accordion">
+          <div class="accordion-heading">
+             <h3>Form+code in design, art, and architecture<h3>
+             <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordion-content">
+             Optional Reading: Form+code in design, art, and architecture (Casey Reas, 2010)<br>
+             <i class="fas fa-link"></i>&nbsp;&nbsp;<a href="https://canvas.sydney.edu.au/courses/32109/external_tools/45015" >https://canvas.sydney.edu.au/courses/32109/...</a>
+          </p>
+       </div>
+    </div>
+    
+    </section>
+    
+    <!-- Reading List ends -->
+
+    <!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+  
+       <div class="box">
+          <h3> <i class="fas fa-lightbulb"></i> StudBud </h3>
+          <p>For students who are looking to maximise their <br> productivity and time management. </p>
+       </div>
+  
+       <div class="box">
+          <h3>quick links</h3>
+          <a href="home.html" class="link">Home</a>
+          <a href="study.html" class="link">Study</a>
+          <a href="reading.html" class="link">Reading List</a>
+          <a href="profile.html" class="link">Profile</a>
+       </div>
+  
+       <div class="box">
+          <h3>Turn on Notifications</h3>
+          <p>Enter your email for notifications, software updates and more.</p>
+          <form action="">
+             <input type="email" name="" placeholder="enter your email" id="" class="email">
+             <input type="submit" value="subscribe" class="btn">
+          </form>
+       </div>
+  
+    </div>
+  
+    <div class="credit"> created by <span>Emily McBurney</span> | DECO2017 </div>
+  
+  </section>
+ <!-- footer section ends -->
+ 
+ 
+
+  <script src="reading.js"></script>
+</body>
+  
+
+</html>

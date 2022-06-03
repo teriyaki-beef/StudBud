@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+ 
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ 
+    <!-- swiper css link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+ 
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+ 
+ </head>
+
+  
+  <body>
+    <!-- Navigation bar section begins  -->
+
+    <header class="header">
+
+      <a href="home.html" class="logo"> <i class="fas fa-lightbulb"></i> StudBud </a>
+      
+    
+       <nav class="navbar">
+          <div id="close-navbar" class="fas fa-times"></div>
+          <a href="home.html">Exit</a>
+       </nav>
+    
+    </header>
+    
+
+<!-- Pomodoro Timer -->
+<section class="todo">
+  <h1 class="heading"> Begin Study Session </h1>
+
+  <div class="pomodoro-app">
+      <div class="timer">
+        <div class="time">
+          <span class="minutes" id="minutes">25</span>
+          <span class="colon" id="filler">:</span>
+          <span class="seconds" id="seconds">00</span>
+        </div>
+      </div>
+  
+      <div class="timer-buttons">
+        <button id="start" class="tbtn">Pomodoro Timer</button>
+        <button  id="shortBreak" class="tbtn">Break</button>
+        <button  id="longBreak" class="tbtn">Stopwatch</button>
+        <button  id="stop" class="tbtn">Stop</button>
+      </div>
+
+  </div>
+
+</section>
+
+<audio id="onComplete" src="timer.mp3" style="width:0; height: 0; visibility: hidden;"></audio>
+
+<!-- Music Player -->
+
+<section class="music">
+
+  <h1 class="musicheading"> Music Player</h1>
+
+  <div class="music-container" id="music-container">
+    <div class="music-info">
+      <h4 id="title"></h4>
+      <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+      </div>
+    </div>
+
+    <audio  id="audio"></audio>
+
+    <div class="img-container">
+      <img src="" alt="music-cover" id="cover" />
+    </div>
+    <div class="navigation">
+      <button id="prev" class="action-btn">
+        <i class="fas fa-backward"></i>
+      </button>
+      <button id="play" class="action-btn action-btn-big">
+        <i class="fas fa-play"></i>
+      </button>
+      <button id="next" class="action-btn">
+        <i class="fas fa-forward"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+    <!-- footer section starts  -->
+    <section class="footer">
+
+      <div class="box-container">
+    
+         <div class="box">
+            <h3> <i class="fas fa-lightbulb"></i> StudBud </h3>
+            <p>For students who are looking to maximise their <br> productivity and time management. </p>
+         </div>
+    
+         <div class="box">
+            <h3>quick links</h3>
+            <a href="home.html" class="link">Home</a>
+            <a href="study.html" class="link">Study</a>
+            <a href="reading.html" class="link">Reading List</a>
+            <a href="profile.html" class="link">Profile</a>
+         </div>
+    
+         <div class="box">
+            <h3>Turn on Notifications</h3>
+            <p>Enter your email for notifications, software updates and more.</p>
+            <form action="">
+               <input type="email" name="" placeholder="enter your email" id="" class="email">
+               <input type="submit" value="subscribe" class="btn">
+            </form>
+         </div>
+    
+      </div>
+    
+      <div class="credit"> created by <span>Emily McBurney</span> | DECO2017 </div>
+    
+    </section>
+   <!-- footer section ends -->
+
+    <script src="study.js"></script>
+  </body>
+
+  
+</html>

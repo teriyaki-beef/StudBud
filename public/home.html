@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+   <link rel="icon" type="image/x-icon" href="favicon.png">
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   
+<!-- Navigation bar section begins  -->
+
+<header class="header">
+
+  <a href="home.html" class="logo"> <i class="fas fa-lightbulb"></i> StudBud </a>
+  
+
+   <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="home.html">home</a>
+      <a href="study.html">study</a>
+      <a href="reading.html">reading list</a>
+      <a href="profile.html">profile</a>
+   </nav>
+
+   <div class="icons">
+      <div id="account-btn" class="fas fa-user"></div>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+</header>
+
+<!-- account form section starts  -->
+
+<div class="account-form">
+
+   <div id="close-form" class="fas fa-times"></div>
+
+   <div class="buttons">
+      <span class="btn active login-btn">login</span>
+      <span class="btn register-btn">register</span>
+   </div>
+
+   <form class="login-form active" action="">
+      <h3>login</h3>
+      <input type="email" placeholder="Enter your Email" class="box">
+      <input type="password" placeholder="Enter your Password" class="box">
+      <div class="flex">
+         <input type="checkbox" name="" id="remember-me">
+         <label for="remember-me">Remember Me</label>
+         <a href="#">Forgot Password?</a>
+      </div>
+      <input type="submit" value="login now" class="btn">
+   </form>
+
+   <form class="register-form" action="">
+      <h3>register</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <input type="password" placeholder="confirm your password" class="box">
+      <input type="submit" value="register now" class="btn">
+   </form>
+
+</div>
+
+<!-- account form section ends -->
+
+
+<!-- subjects section starts  -->
+
+<section class="home-courses">
+
+  <h1 class="heading"> Your Subjects </h1>
+
+  <div class="box-container">
+
+  <a href="programming.html">
+    <div class="box">
+       <img src="icons/laptop.png" alt="">
+       <h3>Design Programming</h3>
+    </div>
+  </a>
+
+
+<a href="processes.html">
+    <div class="box">
+       <img src="icons/books.png" alt="">
+       <h3>Processes and Methods</h3>
+    </div>
+</a>
+
+<a href="viscom.html">
+    <div class="box">
+       <img src="icons/pens.png" alt="">
+       <h3>Visual Communication</h3>
+    </div>
+ </div>
+</a>
+
+</section>
+<!-- subjects section ends -->
+
+<!-- To Do list section starts  -->
+
+<section class="todo">
+
+  <h1 class="heading">To Do: 9 tasks</h1>
+  <h2 class="subheading">Click and drag to preview all tasks</h2>
+
+<div class="todo-slider">
+
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide slide">
+      <div class="image">
+        <img src="icons/plant.png" alt="">
+        <h3>Programming CCC Practice</h3>
+      </div>
+      <div class="content">
+        <h3>CCC Practice</h3>
+        <a href="programming.html" class="tag">Design Programming</a>
+        <p><i class="fas fa-clock"></i>&nbsp;&nbsp;Due in 3 days</p>
+         <a href="#" class="btn">View Task</a>
+      </div>
+   </div>
+
+     <div class="swiper-slide slide">
+        <div class="image">
+          <img src="icons/pink_book.png" alt="">
+          <h3> VISCOM Lecture Notes</h3>
+      </div>
+      <div class="content">
+        <h3>Lecture Notes</h3>
+        <a href="viscom.html" class="tag">Visual Communication</a>
+        <p><i class="fas fa-clock"></i>&nbsp;&nbsp;Due in 3 days</p>
+         <a href="#" class="btn">View Task</a>
+        </div>
+      </div>
+
+     <div class="swiper-slide slide">
+        <div class="image">
+          <img src="icons/stationery.png" alt="">
+          <h3>Processes and Methods Tutorial Prep</h3>
+        </div>
+        <div class="content">
+          <h3>Tutorial Prep</h3>
+          <a href="processes.html" class="tag">Processes and Methods</a>
+          <p><i class="fas fa-clock"></i>&nbsp;&nbsp;Due in 5 days</p>
+           <a href="#" class="btn">View Task</a>
+        </div>
+     </div>
+
+     <div class="swiper-slide slide">
+      <div class="image">
+        <img src="icons/pens.png" alt="">
+        <h3>Research for VISCOM A2</h3>
+      </div>
+      <div class="content">
+        <h3>A2 Research</h3>
+        <a href="viscom.html" class="tag">Visual Communication</a>
+        <p><i class="fas fa-clock"></i>&nbsp;&nbsp;Due in 9 days</p>
+         <a href="#" class="btn">View Task</a>
+      </div>
+   </div>
+
+   <div class="swiper-slide slide">
+    <div class="image">
+      <img src="icons/pink_book.png" alt="">
+      <h3>Notes on Operating Systems</h3>
+    </div>
+    <div class="content">
+      <h3>Take Notes</h3>
+      <a href="programming.html" class="tag">Design Programming</a>
+      <p><i class="fas fa-clock"></i>&nbsp;&nbsp;Due in 9 days</p>
+       <a href="#" class="btn">View Task</a>
+      </div>
+    </div>
+
+    <div class="swiper-slide slide">
+      <div class="image">
+        <img src="icons/pink_book.png" alt="">
+        <h3>Research for A3</h3>
+      </div>
+      <div class="content">
+        <h3>Conduct Background Research</h3>
+        <a href="processes.html" class="tag">Processes and Methods</a>
+        <p><i class="fas fa-clock"></i>&nbsp;&nbsp;Due in 10 days</p>
+         <a href="#" class="btn">View Task</a>
+      </div>
+  </div>
+
+  <div class="swiper-slide slide">
+    <div class="image">
+      <img src="icons/plant.png" alt="">
+      <h3>Idea Brainstorming Session</h3>
+    </div>
+    <div class="content">
+      <h3>Brainstorming for A3</h3>
+      <a href="processes.html" class="tag">Processes and Methods</a>
+      <p><i class="fas fa-clock"></i>&nbsp;&nbsp;Due in 14 days</p>
+       <a href="#" class="btn">View Task</a>
+    </div>
+</div>
+
+  <div class="swiper-slide slide">
+    <div class="image">
+      <img src="icons/laptop.png" alt="">
+      <h3>Web App Pitch</h3>
+    </div>
+    <div class="content">
+      <h3>A2: Web App Pitch</h3>
+      <a href="programming.html" class="tag">Design Programming</a>
+      <p><i class="fas fa-clock"></i>&nbsp;&nbsp;Due in 31 days</p>
+       <a href="#" class="btn">View Task</a>
+    </div>
+</div>
+
+<div class="swiper-slide slide">
+  <div class="image">
+    <img src="icons/stationery.png" alt="">
+    <h3>Design Timescape</h3>
+  </div>
+  <div class="content">
+    <h3>A4: Design Timescape</h3>
+    <a href="viscom.html" class="tag">Visual Communication</a>
+    <p><i class="fas fa-clock"></i>&nbsp;&nbsp;Due in 29 days</p>
+     <a href="#" class="btn">View Task</a>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- To Do list section ends  -->
+
+
+<!-- In- Progress list section starts  -->
+<section class="inprogress">
+
+  <h1 class="heading">In - Progress</h1>
+  <h2 class="subheading">5 Tasks in Progress</h2>
+
+  <div class="box-container">
+
+     <div class="box">
+        <img src="icons/plant.png" alt="">
+        <h3>Processes and Methods A3</h3>
+        <a id="button"></a> Mark as Completed
+     </div>
+
+     <div class="box">
+        <img src="icons/pink_book.png" alt="">
+        <h3>Lecture Notes</h3>
+        <p>Due in 3 days</p>
+     </div>
+
+     <div class="box">
+        <img src="icons/stationery.png" alt="">
+        <h3>Tutorial Prep</h3>
+        <p>Due in 3 days</p>
+     </div>
+
+     <div class="box">
+        <img src="icons/plant.png" alt="">
+        <h3>Marketing Research</h3>
+        <p>Due in 3 days</p>
+     </div>
+
+     <div class="box">
+      <img src="icons/plant.png" alt="">
+      <h3>Marketing Research</h3>
+      <p>Due in 3 days</p>
+   </div>
+
+  </div>
+
+</section>
+<!-- In- Progress list section ends  -->
+
+<!-- Completed list section starts  -->
+<section class="completed">
+
+  <h1 class="heading">Completed</h1>
+  <h2 class="subheading">2 Tasks completed</h2>
+
+  <div class="box-container">
+
+     <div class="box">
+        <img src="icons/plant.png" alt="">
+        <h3>Marketing Research</h3>
+        <p>Due in 3 days</p>
+     </div>
+
+     <div class="box">
+      <img src="icons/plant.png" alt="">
+      <h3>Marketing Research</h3>
+      <p>Due in 3 days</p>
+   </div>
+
+  </div>
+
+</section>
+<!-- Completed list section ends  -->
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+  <div class="box-container">
+
+     <div class="box">
+        <h3> <i class="fas fa-lightbulb"></i> StudBud </h3>
+        <p>For students who are looking to maximise their <br> productivity and time management. </p>
+     </div>
+
+     <div class="box">
+        <h3>quick links</h3>
+        <a href="home.html" class="link">Home</a>
+        <a href="study.html" class="link">Study</a>
+        <a href="reading.html" class="link">Reading List</a>
+        <a href="profile.html" class="link">Profile</a>
+     </div>
+
+     <div class="box">
+        <h3>Turn on Notifications</h3>
+        <p>Enter your email for notifications, software updates and more.</p>
+        <form action="">
+           <input type="email" name="" placeholder="enter your email" id="" class="email">
+           <input type="submit" value="subscribe" class="btn">
+        </form>
+     </div>
+
+  </div>
+
+  <div class="credit"> created by <span>Emily McBurney</span> | DECO2017 </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
