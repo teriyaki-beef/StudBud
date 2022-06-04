@@ -1,5 +1,24 @@
+let popup = document.getElementById("popup");
+
+popup.parentNode.appendChild(popup);
+
+function openPopup(){
+  popup.classList.add("open-popup");
+  document.body.style.background = 'DarkOrange';
+}
+
+function closePopup(){
+  popup.classList.remove("open-popup");
+  document.body.style.background = 'white';
+}
+
+
 //Navigation Bar
 let navbar = document.querySelector('.header .navbar')
+
+
+
+
 
 document.querySelector('#menu-btn').onclick = () =>{
   navbar.classList.add('active');
@@ -55,6 +74,7 @@ var swiper = new Swiper(".todo-slider", {
 });
 
 
+
 //Slider Feature
 var swiper = new Swiper(".logo-slider", {
   loop:true,
@@ -78,4 +98,5 @@ var swiper = new Swiper(".logo-slider", {
     },
   },
 });
+
 

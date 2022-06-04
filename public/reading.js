@@ -150,3 +150,14 @@ document.querySelector('.load-more .btn').onclick = () =>{
   });
   document.querySelector('.load-more .btn').style.display = 'none';
 };
+
+// Pop up tabs
+let popup = document.getElementById("popup");
+
+function openPopup(){
+  popup.classList.add("open-popup");
+}
+
+function closePopup(){
+  popup.classList.remove("open-popup");
+}

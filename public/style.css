@@ -68,8 +68,8 @@ section {
   color: #FF9030;
 }
 
-.heading-link p a:hover {
-  text-decoration: underline;
+h3 {
+  font-size: 2rem;
 }
 
 .heading {
@@ -415,6 +415,81 @@ section {
   padding: .5rem 0;
 }
 
+
+/* Pop up windows  */
+.details{
+  width: 100%;
+  height: 10vh;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+}
+
+.popbtn {
+  padding: 10px 40px;
+  background: #444;
+  color: #fff;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 30px;
+}
+
+.popbtn:hover {
+  background: #fff;
+  color: #444;
+}
+
+.popup{
+  width:600px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+  visibility: visible;
+  top: 80%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img{
+  width:20%;
+  height: 20%;
+  margin-top: -50px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.popup h2{
+  font-size: 2rem;
+  margin: 20px 0 10px;
+}
+
+.popup button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
 /* in progress section */
 .inprogress .box-container {
   display: -ms-grid;
@@ -560,13 +635,42 @@ button {
   background: #FF9030;
 }
 
-.programming .task-container .task img {
+
+.programming .task-container .task p{
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #444;
+  padding: .5rem 0;
+}
+
+.programming-progress .progress-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem;
+}
+
+.programming-progress .progress-container .progress{
+  padding: 3rem 2rem;
+  border-radius: 25px;
+  text-align: center;
+  border: 0.1rem solid #FA6F98;
+  background: #FFD8E3;
+  cursor: pointer;
+}
+
+.programming-progress .progress-container .progress:hover{
+  background: #FA6F98;
+}
+
+.programming-progress .progress-container .progress img {
   height: 10rem;
   margin-bottom: .7rem;
 }
 
-.programming .task-container .task p{
-  font-size: 1.7rem;
+.programming-progress .progress-container .progress p{
+  font-size: 2rem;
   text-transform: capitalize;
   color: #444;
   padding: .5rem 0;

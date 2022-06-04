@@ -131,7 +131,8 @@
         <h3>CCC Practice</h3>
         <a href="programming.html" class="tag">Design Programming</a>
         <p><i class="fas fa-clock"></i>&nbsp;&nbsp;Due in 3 days</p>
-         <a href="#" class="btn">View Task</a>
+        
+         <a href="programming.html" class="btn">View Task</a>
       </div>
    </div>
 
@@ -144,7 +145,7 @@
         <h3>Lecture Notes</h3>
         <a href="viscom.html" class="tag">Visual Communication</a>
         <p><i class="fas fa-clock"></i>&nbsp;&nbsp;Due in 3 days</p>
-         <a href="#" class="btn">View Task</a>
+         <a href="viscom.html" class="btn">View Task</a>
         </div>
       </div>
 
@@ -157,7 +158,7 @@
           <h3>Tutorial Prep</h3>
           <a href="processes.html" class="tag">Processes and Methods</a>
           <p><i class="fas fa-clock"></i>&nbsp;&nbsp;Due in 5 days</p>
-           <a href="#" class="btn">View Task</a>
+           <a href="processes.html" class="btn">View Task</a>
         </div>
      </div>
 
@@ -170,7 +171,7 @@
         <h3>A2 Research</h3>
         <a href="viscom.html" class="tag">Visual Communication</a>
         <p><i class="fas fa-clock"></i>&nbsp;&nbsp;Due in 9 days</p>
-         <a href="#" class="btn">View Task</a>
+         <a href="viscom.html" class="btn">View Task</a>
       </div>
    </div>
 
@@ -183,7 +184,7 @@
       <h3>Take Notes</h3>
       <a href="programming.html" class="tag">Design Programming</a>
       <p><i class="fas fa-clock"></i>&nbsp;&nbsp;Due in 9 days</p>
-       <a href="#" class="btn">View Task</a>
+       <a href="programming.html" class="btn">View Task</a>
       </div>
     </div>
 
@@ -254,8 +255,8 @@
 
      <div class="box">
         <img src="icons/plant.png" alt="">
-        <h3>Processes and Methods A3</h3>
-        <a id="button"></a> Mark as Completed
+        <h3>Processes and Methods</h3>
+        <p>Due in 3 days</p>
      </div>
 
      <div class="box">
@@ -355,8 +356,68 @@
 <!-- swiper js link  -->
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-<!-- custom js file link  -->
-<script src="script.js"></script>
+<!-- Javascript used for this page -->
+<script>
+
+//Navigation Bar
+let navbar = document.querySelector('.header .navbar')
+
+
+
+
+
+document.querySelector('#menu-btn').onclick = () =>{
+  navbar.classList.add('active');
+}
+
+document.querySelector('#close-navbar').onclick = () =>{
+  navbar.classList.remove('active');
+};
+
+//Account form Sign up or Log in
+let registerBtn = document.querySelector('.account-form .register-btn');
+let loginBtn = document.querySelector('.account-form .login-btn');
+
+registerBtn.onclick = () =>{
+  registerBtn.classList.add('active');
+  loginBtn.classList.remove('active');
+  document.querySelector('.account-form .login-form').classList.remove('active');
+  document.querySelector('.account-form .register-form').classList.add('active');
+};
+
+loginBtn.onclick = () =>{
+  registerBtn.classList.remove('active');
+  loginBtn.classList.add('active');
+  document.querySelector('.account-form .login-form').classList.add('active');
+  document.querySelector('.account-form .register-form').classList.remove('active');
+};
+
+let accountForm = document.querySelector('.account-form')
+
+document.querySelector('#account-btn').onclick = () =>{
+  accountForm.classList.add('active');
+}
+
+document.querySelector('#close-form').onclick = () =>{
+  accountForm.classList.remove('active');
+};
+
+var swiper = new Swiper(".todo-slider", {
+  grabCursor:true,
+  spaceBetween: 20,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+  },
+});
+</script>
 
 </body>
 </html>
