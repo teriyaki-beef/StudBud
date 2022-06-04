@@ -676,6 +676,38 @@ button {
   padding: .5rem 0;
 }
 
+.programming-completed .completed-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem;
+}
+
+.programming-completed .completed-container .completed{
+  padding: 3rem 2rem;
+  border-radius: 25px;
+  text-align: center;
+  border: 0.1rem solid #5FDA9F;
+  background: #ADFFD8;
+  cursor: pointer;
+}
+.programming-completed .completed-container .completed:hover{
+  background: #5FDA9F;
+}
+
+.programming-completed .completed-container .completed img {
+  height: 10rem;
+  margin-bottom: .7rem;
+}
+
+.programming-completed .completed-container .completed p{
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #444;
+  padding: .5rem 0;
+}
+
 /* completed readings section */
 .completed .box-container {
   display: -ms-grid;

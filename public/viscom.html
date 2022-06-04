@@ -65,7 +65,7 @@
    </form>
 
    <form class="register-form" action="">
-      <h3>register now</h3>
+      <h3>register</h3>
       <input type="email" placeholder="enter your email" class="box">
       <input type="password" placeholder="enter your password" class="box">
       <input type="password" placeholder="confirm your password" class="box">
@@ -77,19 +77,95 @@
 <!-- account form section ends -->
 
 <section class="heading-link">
-
-   <p> <a href="home.html">Home  </a>/<a href="home.html"> Your Subjects </a> / Visual Communication</p>
-
+   <p> <a href="home.html">Home  </a>/<a href="home.html"> Your Subjects </a> / Visual Communication </p>
+</section>
    <h1 class="heading">Visual Communication</h1>
-   <h2 class="subheading">2 Tasks To Do</h2>
+   <h2 class="subheading">6 Tasks</h2>
 
+<section class="programming">
+   <h1 class="heading">To Do (3)</h1>
+
+   <div class="task-container">
    <div class="task">
-      <img src="icons/pink_book.png" alt="">
-      <h3>Tutorial Prep</h3>
+      <h3>Week 5 Lecture Notes</h3>
+      <div class ="details">
+      <button type ="submit" class="popbtn" onclick="openPopup()" >View Task</button>
+      <div class="popup" id="popup">
+         <img src="icons/plant.png">
+         <h1 class="heading">Task Details</h1>
+       <h2>Programming CCC Practice</h2>
+       <h3>Subject: Visual Communication</h3>
+       <a href="#" class="tag">Due in 3 days</a>
+       <a href="#" class="tag">High Priority</a>
+       <button type ="button" onclick ="closePopup()"> Okay </button>
+      </div>
+     </div>
    </div>
 
+   <div class="task">
+      <h3>A2 Research</h3>
+      <div class ="details">
+      <button type ="submit" class="popbtn" onclick="openPopup()" >View Task</button>
+      <div class="popup" id="popup">
+         <img src="icons/pink_book.png">
+         <h1 class="heading">Task Details</h1>
+       <h2>Notes on Operating Systems</h2>
+       <h3>Subject: Design Programming</h3>
+       <a href="#" class="tag">Due in 6 days</a>
+       <a href="#" class="tag">Low Priority</a>
+       <button type ="button" onclick ="closePopup()"> Okay </button>
+      </div>
+     </div>
+   </div>
 
+   <div class="task">
+      <h3>Design Timescape</h3>
+      <div class ="details">
+      <button type ="submit" class="popbtn" onclick="openPopup()" >View Task</button>
+      <div class="popup" id="popup">
+         <img src="icons/laptop.png">
+         <h1 class="heading">Task Details</h1>
+       <h2>Notes on Operating Systems</h2>
+       <h3>Subject: Design Programming</h3>
+       <a href="#" class="tag">Due in 6 days</a>
+       <a href="#" class="tag">Low Priority</a>
+       <button type ="button" onclick ="closePopup()"> Okay </button>
+      </div>
+     </div>
+   </div>
+   </div>
 </section>
+
+
+   <section class="programming-progress">
+   <h1 class="heading">In Progress (2)</h1>
+
+   <div class="progress-container">
+   <div class="progress">
+      <img src="icons/plant.png" alt="">
+      <h3>Design Timescape Draft</h3>
+   </div>
+
+   <div class="progress-container">
+      <div class="progress">
+         <img src="icons/plant.png" alt="">
+         <h3>Tutorial Preparation</h3>
+      </div>
+   </div>
+   </section>
+
+   <section class="programming-completed">
+      <h1 class="heading">Completed (1)</h1>
+   
+      <div class="completed-container">
+         <div class="completed">
+            <img src="icons/pink_book.png" alt="">
+            <h3>Week 4 Lecture Notes</h3>
+         </div>
+      </div>
+      </section>
+
+
 
 
 <!-- footer section starts  -->
